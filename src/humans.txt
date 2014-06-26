@@ -1,0 +1,71 @@
+
+                         MMMMMMMMM,                         
+                   MMMMMMMMMMMMMMMMMMMMM                    
+                MMMMMMMMMMMMMMMMMMMMMMMMMMM                 
+            .MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM.             
+          .MMMMMMM              MMMMMMMMMMMMMMMM.           
+         MMMMMMMMM               MMMMMMMMMMMMMMMMM          
+        MMMMMMMMMM                MMMMMMMMMMMMMMMMM         
+     .,MMMMMMMMMMM     .MMMMM      MMMMMMMMMMMMMMMMM,.      
+     MMMMMMMMMMMMM     .MMMMMM.    MMMMMMMMMMMMMMMMMMM      
+    :MMMMMMMMMMMMM     .MMMMMM~    MMMMMMMMMMMMMMMMMMMM     
+   .MMMMMMMMMMMMMM     .MMMMMM7    MMMMMMMMMMMMMMMMMMMM.    
+   MMMMMMMMMMMMMMM     .MMM .M7    MM8MMMMMMMMMMMMMMMMMM    
+ .MMMMMMMMMMMMMMMM     .M.   M7    MM  MMMMMMMMMMMMMMMMMM.  
+ .MMMMMMMMMMMMMMMM     M8    M7    MM   MMMMMMMMMMMMMMMMM.  
+ OMMMMMMMMMMMMMMMM    .M     M7    MM   MMMMMMMMMMMMMMMMMO  
+ MMMMMMMMMMMMMMMMM    =M     MI    MM   .MMMMMMMMMMMMMMMMM  
+.MMMMMMMMMMMMMMMMM    ~M     MN    MMMMMMMMMMMMMMMMMMMMMMM. 
+ MMMMMMMMMMMMMMMMM     M      M    MMMMMMMMMMMMMMMMMMMMMMM  
+.MMMMMMMMMMMMMMMMM     MZ      M   MMMMMMMMMMMMMMMMMMMMMMM  
+ MMMMMMMMMMMMMMMMM     .M      .MM MMMMMMMMMMMMMMMMMMMMMMM  
+.MMMMMMMMMMMMMMMMM     .MM      ..MMMMMMMMMMMMMMMMMMMMMMMM. 
+ MMMMMMMMMMMMMMMMM     .MMMM.      8MMMMMMMMMMMMMMMMMMMMMM  
+ OMMMMMMMMMMMMMMMM     .MMMMM7       MMMMMMMMMMMMMMMMMMMMO  
+ .MMMMMMMMMMMMMMMM          .MM       MMMMMMMMMMMMMMMMMMM.  
+ .MMMMMMMMMMMMMMMM             MM.     MMMMMMMMMMMMMMMMMM.  
+   MMMMMMMMMMMMMMM            ..MM.     MMMMMMMMMMMMMMMM    
+   .MMMMMMMMMMMMMM        .?MMMMMMM     .MMMMMMMMMMMMMM.    
+    :MMMMMMMMMMMMMMMMMM.  ..MMMMMMM:    .MMMMMMMMMMMMMM     
+     MMMMMMMMMMMMMMMMMMD     MMMMMM     .MMMMMMMMMMMMM      
+     .,MMMMMMMMMMMMMMMMM      MMMMM.    +MMMMMMMMMMM,.      
+        MMMMMMMMMMMMMMMMM       .       MMMMMMMMMMM         
+         MMMMMMMMMMMMMMMM8             MMMMMMMMMMM          
+          .MMMMMMMMMMMMMMMM          $MMMMMMMMMM.           
+            .MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM.             
+                MMMMMMMMMMMMMMMMMMMMMMMMMMM                 
+                   MMMMMMMMMMMMMMMMMMMMM                    
+                         MMMMMMMMM,                         
+
+
+
+
+
+/* TEAM */
+
+
+Author: Daniel Sundy.
+Site: http://dsundy.com.
+Twitter: @dansundy.
+Location: Toronto, Canada.
+
+
+
+
+
+/* THANKS */
+
+
+Name: name or url
+
+
+
+
+
+/* SITE */
+
+
+Last update: YYYY/MM/DD
+Standards: HTML5, CSS3
+Components: jQuery
+Software: Sublime Text 2

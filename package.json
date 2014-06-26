@@ -1,0 +1,10 @@
+{
+  "name": "starterplate",
+  "version": "0.0.0",
+  "description": "A project starting point with different branches for different configurations.",
+  "main": "index.html",
+  "author": "Daniel Sundy",
+  "devDependencies": {
+    "gulp": "~3.8.2"
+  }
+}
