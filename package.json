@@ -5,6 +5,16 @@
   "main": "index.html",
   "author": "Daniel Sundy",
   "devDependencies": {
-    "gulp": "~3.8.2"
+    "gulp": "~3.8.2",
+    "gulp-autoprefixer": "0.0.7",
+    "gulp-clean": "~0.3.1",
+    "gulp-jshint": "~1.6.3",
+    "gulp-livereload": "~2.1.0",
+    "gulp-ruby-sass": "~0.5.0",
+    "gulp-rename": "~1.2.0",
+    "gulp-uglify": "~0.3.1",
+    "gulp-watch": "~0.6.8",
+    "gulp-usemin": "~0.3.5",
+    "gulp-rev": "~0.4.1"
   }
 }
