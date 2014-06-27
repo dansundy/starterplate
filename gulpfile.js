@@ -1,4 +1,5 @@
 var data          = require('./package.json');
+
 var gulp          = require('gulp'),
     autoprefixer  = require('gulp-autoprefixer'),
     clean         = require('gulp-clean'),
@@ -43,8 +44,7 @@ gulp.task('move', ['styles'], function(){
   return gulp.src([
       path.src.styles + '/oldie.css',
       path.src.scripts + '/lib/html5.js',
-      path.src.base + '/**/*.php',
-      path.src.base + '/**/*.txt',
+      path.src.base + '/**/*.{php,txt}',
       path.src.base + '/.htaccess',
     ], {base: path.src.base})
     .pipe(gulp.dest(path.deploy.base))
@@ -69,7 +69,7 @@ gulp.task('usemin', ['styles'], function() {
 });
 
 gulp.task('assets', function() {
-  return gulp.src([path.src.assets + '/**/*.jpg', path.src.assets + '/**/*.png', path.src.assets + '/**/*.svg'])
+  return gulp.src([path.src.assets + '/**/*.{jpg,png,svg}'])
     .pipe(imagemin({
       progressive: true,
       svgoPlugins: [{removeViewBox: false}]
@@ -82,7 +82,7 @@ gulp.task('build', ['clean', 'usemin', 'move', 'assets']);
 gulp.task('watch', function(){
   livereload.listen();
   gulp.watch(path.src.sass + '/**/*.sass', ['styles']);
-  gulp.watch([path.src.base + '/**/*.html', path.src.base +'/**/*.php']).on('change', livereload.changed);
+  gulp.watch([path.src.base + '/**/*.{html,php}']).on('change', livereload.changed);
   gulp.watch([path.src.scripts + '/**/*.js']).on('change', livereload.changed);
   gulp.watch([path.src.assets + '/**/*']).on('change', livereload.changed);
 });
