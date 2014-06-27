@@ -1,3 +1,4 @@
+var data          = require('./package.json');
 var gulp          = require('gulp'),
     autoprefixer  = require('gulp-autoprefixer'),
     clean         = require('gulp-clean'),
@@ -5,6 +6,8 @@ var gulp          = require('gulp'),
     // imagemin     = require('gulp-imagemin'),
     jshint        = require('gulp-jshint'),
     livereload    = require('gulp-livereload'),
+    minifyCss     = require('gulp-minify-css'),
+    minifyHtml    = require('gulp-minify-html'),
     rename        = require('gulp-rename'),
     // replace      = require('gulp-replace'),
     rev           = require('gulp-rev'),
@@ -46,17 +49,30 @@ var styles = function(env) {
 /**
  * Tasks
  */
+gulp.task('clean', function(cb){
+  gulp.src(path.deploy.base + '/*', {read: false})
+    .pipe(clean());
+  err = false;
+  cb(err);
+});
+
 gulp.task('styles', function() {
   styles('src');
 });
 
-gulp.task('clean', function(){
-  return gulp.src([path.deploy.base + '/*'], {read: false})
-    .pipe(clean());
+gulp.task('usemin', ['styles'], function() {
+  gulp.src(path.src.base + '/*.html')
+    .pipe(usemin({
+      css: [minifyCss(), 'concat'],
+      html: [minifyHtml({empty:true})],
+      js: [uglify(), rev()]
+    }))
+    .pipe(gulp.dest(path.deploy.base + '/'))
 });
 
-gulp.task('build', ['clean'], function(){
-  styles('deploy');
+gulp.task('build', ['clean', 'usemin'], function(){
+  // styles('deploy');
+  // gulp.task('usemin');
   // scripts('deploy');
   // assets('img');
   // assets('svg');
