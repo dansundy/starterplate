@@ -2,14 +2,12 @@ var data          = require('./package.json');
 var gulp          = require('gulp'),
     autoprefixer  = require('gulp-autoprefixer'),
     clean         = require('gulp-clean'),
-    // concat       = require('gulp-concat'),
     imagemin      = require('gulp-imagemin'),
     jshint        = require('gulp-jshint'),
     livereload    = require('gulp-livereload'),
     minifyCss     = require('gulp-minify-css'),
     minifyHtml    = require('gulp-minify-html'),
     rename        = require('gulp-rename'),
-    // replace      = require('gulp-replace'),
     rev           = require('gulp-rev'),
     sass          = require('gulp-ruby-sass'),
     svgmin        = require('gulp-svgmin'),
@@ -44,7 +42,10 @@ gulp.task('clean', function(){
 gulp.task('move', ['styles'], function(){
   return gulp.src([
       path.src.styles + '/oldie.css',
-      path.src.scripts + '/lib/html5.js'
+      path.src.scripts + '/lib/html5.js',
+      path.src.base + '/**/*.php',
+      path.src.base + '/**/*.txt',
+      path.src.base + '/.htaccess',
     ], {base: path.src.base})
     .pipe(gulp.dest(path.deploy.base))
 });
