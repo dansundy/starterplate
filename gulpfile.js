@@ -44,7 +44,7 @@ gulp.task('move', ['styles'], function(){
   return gulp.src([
       path.src.styles + '/oldie.css',
       path.src.scripts + '/lib/html5.js',
-      path.src.base + '/**/*.{php,txt}',
+      path.src.base + '/**/*.{php,txt,json}',
       path.src.base + '/.htaccess',
     ], {base: path.src.base})
     .pipe(gulp.dest(path.deploy.base))
@@ -59,11 +59,11 @@ gulp.task('styles', function() {
 });
 
 gulp.task('usemin', ['styles'], function() {
-  return gulp.src(path.src.base + '/*.html')
+  return gulp.src(path.src.base + '/**/*.html')
     .pipe(usemin({
       css: [minifyCss(), 'concat'],
-      html: [minifyHtml({empty:true, comments:true})],
-      js: [uglify(), rev()]
+      html: [minifyHtml({empty:true, comments:true, conditionals:true, quotes:true})],
+      js: [uglify({mangle:false}), rev()]
     }))
     .pipe(gulp.dest(path.deploy.base))
 });
