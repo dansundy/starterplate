@@ -86,3 +86,5 @@ gulp.task('watch', function(){
   gulp.watch([path.src.scripts + '/**/*.js']).on('change', livereload.changed);
   gulp.watch([path.src.assets + '/**/*']).on('change', livereload.changed);
 });
+
+gulp.task('default', ['watch']);
