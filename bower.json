@@ -1,0 +1,21 @@
+{
+  "name": "starterplate",
+  "version": "0.0.0",
+  "authors": [
+    "dansundy <dansundy@gmail.com>"
+  ],
+  "description": "A project starting point with different branches for different configurations.",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "standardize": "~1.1.0"
+  }
+}
