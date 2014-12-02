@@ -50,7 +50,7 @@ gulp.task('move', ['styles'], function(){
     .pipe(gulp.dest(path.deploy.base))
 });
 
-gulp.task('styles', function() {
+gulp.task('styles', ['clean'], function() {
   return gulp.src(path.src.sass + '/*.sass')
     .pipe(sass({ style: 'expanded', compass: true }))
     .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
